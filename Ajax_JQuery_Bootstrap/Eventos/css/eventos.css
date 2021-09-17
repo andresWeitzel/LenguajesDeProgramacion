@@ -1,0 +1,13 @@
+h2 {
+    text-align: center;
+}
+
+div.footer {
+    margin: auto;
+    padding-left: 400px;
+}
+
+div.footer nav {
+    margin: auto;
+    padding-left: 10px;
+}

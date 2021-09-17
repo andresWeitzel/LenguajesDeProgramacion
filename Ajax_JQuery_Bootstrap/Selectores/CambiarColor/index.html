@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <!--Test JQuery-->
+    <script type="text/javascript">
+        //Apenas cargue la pagina ejecuto la siguiente funcion
+        $(document).ready(function() {
+            /*tomo el tag del tipo button y cuando se ejecute el evento click 
+            hara tal cosa*/
+            $("#botonAzul").click(function() {
+                /*Tomo el id del titulo y maqueto a mi gusto!(En este caso cambio de color el titulo)
+                 */
+                $("#titulo").css("color", "#0000FF");
+            });
+            $("#botonAmarillo").click(function() {
+                /*Tomo el id del titulo y maqueto a mi gusto!(En este caso cambio de color el titulo)
+                 */
+                $("#titulo").css("color", "#FFFF00");
+            });
+        });
+
+        //<!--Test JS-->
+        /*  window.onload = function() {
+              document.getElementsByTagName("button")[0].onclick = cambiarColor;
+          }
+
+          function cambiarColor() {
+              document.getElementById('titulo').style.color = '#0000FF';
+          }*/
+    </script>
+
+</head>
+
+<body>
+    <h1 id="titulo">CambiarColor</h1>
+    <button id="botonAzul" type="button" class="btn btn-primary">Azul</button>
+    <button id="botonAmarillo" type="button" class="btn btn-primary">Amarillo</button>
+</body>
+
+</html>

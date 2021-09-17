@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectoresContenido</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--Nuestro JS-->
+    <script src="SelectoresContenido.js"></script>
+</head>
+
+<body>
+    <!--TITTLE-->
+    <h1>Selectores de Contenido <span class="badge badge-secondary">JQUERY</span></h1>
+    <!--END TITTLE-->
+
+    <!--ACCORDION-->
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Computadoras
+              </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Pantalla: 6.7", 1080 x 2400 pixels Procesador: Snapdragon 855 2.84GHz RAM: 6GB/8GB Almacenamiento: 128GB Expansión: microSD Cámara: Triple, 48MP+8MP+5MP Batería: 4500 mAh OS: Android 9.0 Perfil: 8.4 mm Peso: 206 g
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Celulares
+              </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Memoria ampliable a 4GB. mínimo Controladora de Sonido. Conectores USB 2.0, 6, con 2 conectores frontales. Controladora de red: Ethernet PCI 10/100/1000 Mbits. Interfaz para red Ethernet / Fast Ethernet (IEEE 802.3), conector RJ45. Puertos PCI convencionales
+                    1, PCI Express X16 1, PCI Express X1 1, Mínimo Puerto PS/2 para teclado y mouse. Conectores Serial ATA 4. Conector IDE para disco. Controladora de video 128 Mb. de memoria
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tablets
+              </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    e="tabpanel" aria-labelledby="list-settings-list"> (1) Grande/Fina: Aprox. 3,8 MB (3888 x 2592 píxeles) (2) Grande/Normal: Aprox. 2,0 MB (3888 x 2592 píxeles) (3) Mediana/Fina: Aprox. 2,3 MB (2816 x 1880 píxeles) (4) Mediana/Normal: Aprox. 1,2 MB (2816
+                    x 1880 píxeles) (5) Pequeña/Fina: Aprox. 1,3 MB (1936 x 1288 píxeles) (6) Pequeña/Normal: Aprox. 0,7 MB (1936 x 1288 píxeles) (7) RAW: Aprox. 9,8 MB (3888 x 2592 píxeles) * Los tamaños de archivo exactos dependen del motivo, de la
+                    sensibilidad ISO, de los estilos de foto, etc.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END ACCORDION-->
+</body>
+
+</html>

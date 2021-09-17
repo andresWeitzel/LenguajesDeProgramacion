@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectores Compuestos</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--Nuestro JS-->
+    <script src="SelectoresCompuestos.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <h1 id="titulo">Ejemplo de DOM</h1>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Computadoras</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Celulares</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tablets</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Camaras</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    Memoria ampliable a 4GB. mínimo Controladora de Sonido. Conectores USB 2.0, 6, con 2 conectores frontales. Controladora de red: Ethernet PCI 10/100/1000 Mbits. Interfaz para red Ethernet / Fast Ethernet (IEEE 802.3), conector RJ45. Puertos PCI convencionales
+                    1, PCI Express X16 1, PCI Express X1 1, Mínimo Puerto PS/2 para teclado y mouse. Conectores Serial ATA 4. Conector IDE para disco. Controladora de video 128 Mb. de memoria</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    Pantalla: 6.7", 1080 x 2400 pixels Procesador: Snapdragon 855 2.84GHz RAM: 6GB/8GB Almacenamiento: 128GB Expansión: microSD Cámara: Triple, 48MP+8MP+5MP Batería: 4500 mAh OS: Android 9.0 Perfil: 8.4 mm Peso: 206 g</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    Pantalla sAMOLED de 8.0" LTE CAT 4 (bandas 2, 3, 4, 7,12) Procesador Qualcomm de cuádruple núcleo, 1.2 GHz Cámara trasera de 5MP / Cámara frontal de 2MP 2 GB de RAM / 16GB de ROM
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    (1) Grande/Fina: Aprox. 3,8 MB (3888 x 2592 píxeles) (2) Grande/Normal: Aprox. 2,0 MB (3888 x 2592 píxeles) (3) Mediana/Fina: Aprox. 2,3 MB (2816 x 1880 píxeles) (4) Mediana/Normal: Aprox. 1,2 MB (2816 x 1880 píxeles) (5) Pequeña/Fina: Aprox. 1,3 MB (1936
+                    x 1288 píxeles) (6) Pequeña/Normal: Aprox. 0,7 MB (1936 x 1288 píxeles) (7) RAW: Aprox. 9,8 MB (3888 x 2592 píxeles) * Los tamaños de archivo exactos dependen del motivo, de la sensibilidad ISO, de los estilos de foto, etc.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
